@@ -1,0 +1,102 @@
+/* Common ad selectors and containers */
+[class*="ad-"],
+[class*="Ad-"],
+[class*="AD-"],
+[class*="advertisement"],
+[id*="ad-"],
+[id*="Ad-"],
+[id*="AD-"],
+.advertisement,
+.ad-container,
+.ad-wrapper,
+.ad-banner,
+.ad-unit,
+.adsbygoogle,
+iframe[src*="ads"],
+iframe[id*="ads"],
+div[aria-label*="advertisement"],
+aside[aria-label*="advertisement"],
+div[role="complementary"][class*="ad"],
+/* Asura specific selectors */
+#popular-today-ads,
+#chapter-below-ads,
+#chapter-above-ads,
+.PUBFUTURE,
+[id^="pf-"],
+[class^="pf-"],
+[data-unit],
+.ads_container,
+div[id^="as"],
+[id*="passback"],
+/* Asura premium popup */
+div[class*="bg-gradient-to-br"][class*="from-indigo-900"],
+div[class*="fixed inset-0 bg-gray-900"],
+/* Ad network containers */
+div[data-ad],
+div[data-ad-unit],
+div[data-adslot],
+[data-cfasync="false"],
+/* Google Ads specific */
+ins.adsbygoogle,
+.google-ad,
+.googlepublisherads,
+/* Social media promotional content */
+[aria-label*="Sponsored"],
+[data-ad-comet-preview],
+[data-testid*="sponsored"],
+/* Common ad placements */
+.sidebar-ads,
+.top-ad,
+.bottom-ad,
+.header-ad,
+.footer-ad,
+/* Video ad containers */
+.video-ads,
+.player-ads,
+.preroll-ads,
+/* Newsletter and promotional popups */
+.newsletter-popup,
+.promotional-popup,
+.signup-popup {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+/* Remove empty spaces left by hidden ads */
+[class*="ad-"]:empty,
+[id*="ad-"]:empty,
+.ad-container:empty,
+.ad-wrapper:empty {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+}
+/* Prevent modal backdrop */
+.modal-backdrop,
+.bg-gray-900.bg-opacity-75 {
+    display: none !important;
+}
+
+/* Block Asura+ Premium popups */
+div[class*="bg-gradient-to-br"][class*="from-indigo-900"],
+div[class*="fixed inset-0 bg-gray-900"],
+div[class*="fixed inset-0 flex items-center justify-center z-50"],
+div[class*="relative rounded-lg shadow-lg max-w-md mx-4"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
